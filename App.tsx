@@ -68,18 +68,9 @@ export default class App extends Component {
         onHandlerStateChange={this.handleStateChange}
         minPointers={2}>
         <View style={styles.container}>
-          <View style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            <Text style={{
-              fontSize: 14,
-              color: '#AFAFAF',
-              marginHorizontal: 50,
-              textAlign: 'center'
-            }}>
-              Swipe up from bottom with two finger to open basket.
+          <View style={styles.messageContainer}>
+            <Text style={styles.messageText}>
+              Swipe up from the bottom with two fingers to open your cart.
             </Text>
           </View>
 
@@ -135,6 +126,17 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  messageContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  messageText: {
+    fontSize: 14,
+    color: '#AFAFAF',
+    marginHorizontal: 50,
+    textAlign: 'center'
   },
   barContainer: {
     position: 'absolute',
